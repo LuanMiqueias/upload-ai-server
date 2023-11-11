@@ -1,0 +1,32 @@
+{
+	"name": "upload-ia-server",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"dev": "tsx watch src/server.ts",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"prisma":{
+		"seed": "tsx prisma/seed.ts"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"@prisma/client": "^5.5.2",
+		"@types/node": "^20.9.0",
+		"prisma": "^5.5.2",
+		"tsx": "^4.0.0",
+		"typescript": "^5.2.2"
+	},
+	"dependencies": {
+		"@fastify/cors": "^8.4.1",
+		"@fastify/multipart": "^8.0.0",
+		"ai": "^2.2.22",
+		"dotenv": "^16.3.1",
+		"fastify": "^4.24.3",
+		"openai": "^4.17.2",
+		"zod": "^3.22.4"
+	}
+}
